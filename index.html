@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="phone.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Duanku Flower Shop</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><img width="130px" src="Logo (2).png" alt=""></div>
+        <div class="links">
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="icons">
+            <a href="#"><i class="bi bi-cart-fill"></i></a>
+            <a href="#"><i class="bi bi-person-lines-fill"></i></a>
+        </div>
+        <div onclick="come()" class="list">
+            <i class="bi bi-list"></i>
+        </div>
+    </nav>
+
+    <div class="list-help">
+        <div class="a">
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="i">
+            <a href="#"><i class="bi bi-cart-fill"></i></a>
+            <a href="#"><i class="bi bi-person-lines-fill"></i></a>
+        </div>
+    </div>
+
+    <header class="header">
+        <h1>Uyingizga tinchlik olib keling  
+             <span style="color: #3fc1cd;">O'simliklar</span> bilan</h1>
+        <p>Biz bilan uy bezatish uchun orzuingizdagi</p>
+        <p>o'simlikni toping va biz buni amalga oshiramiz. </p>
+    </header>
+
+
+    <section class="shopping-cards">
+        <div class="card-carousel">
+            <div class="card">
+                <h2 class="c">Yetkazib berish bepul <i class="bi bi-truck"></i></h2>
+                <p class="c">Har bir etkazib berish uchun to'lov olinmaydi </p>
+                <br>
+                <img src="peace-lily-plant-terracotta-pot-home-decor-object 1.png" alt="">
+            </div>
+            <div class="card">
+                <h2 class="c">Tez to'lov <i class="bi bi-cash-coin"></i></h2>
+                <p class="c">100% xavfsiz to'lov</p>
+                <img src="snake-plant-terracotta-pot-home-decor 1.png" alt="">
+            </div>
+            <div class="card">
+                <h2 class="c">24/7 vaqtda <i class="bi bi-clock"></i> </h2>
+                <p class="c">Tezkor aloqa</p>
+                <img src="image (5).png" alt="">
+            </div>
+        </div>
+        <button id="prevBtn">&larr;</button>
+        <button id="nextBtn">→</button>
+    </section>
+
+    <section class="about">
+        <h1 class="c">O'simlik ma'lumotnomasi <i class="bi bi-book"></i></h1>
+        <p class="c">uyingizni tetiklantiruvchi o'simliklar bilan juda qulay 
+            qiling!</p>
+
+  <div class="flev-div">
+    <div class="div-img">
+        <img src="brown_sofa_wooden_table_living_room_interior_with_plant_concrete.png" alt="">
+     </div>
+
+     <div class="div-img">
+        <img src="unsplash_MBsReSZ2WNM.png" alt="">
+     </div>
+
+     <div class="div-img">
+        <img src="high-angle-desk-arrangement-with-plants.png" alt="">
+     </div>
+  </div>
+
+        <h1 class="c" style="margin-top: 30px;">O'simliklarga qanday g'amxo'rlik qilish kerak?</h1>
+        <h3 class="c">O'simliklarga butun qalbingiz bilan g'amxo'rlik 
+            qiling!</h3>
+            
+            <div class="flint">
+                <div class="divs">
+                    <img src="icon-park-outline_sun.png" alt="">
+                    <p>Yopiq o'simliklarga g'amxo'rlik qilayotganda, xona 
+                        harorati juda sovuq yoki juda issiq emasligiga 
+                        ishonch hosil qiling</p>
+                </div>
+                <div class="divs">
+                    <img src="akar-icons_water.png" alt="">
+                    <p>Yopiq o'simliklarga g'amxo'rlik qilayotganda, xona 
+                        harorati juda sovuq yoki juda issiq emasligiga 
+                        ishonch hosil qiling</p>
+                </div>
+                <div class="divs">
+                    <img src="charm_plant-pot.png" alt="">
+                    <p>Yopiq o'simliklarga g'amxo'rlik qilayotganda, xona 
+                        harorati juda sovuq yoki juda issiq emasligiga 
+                        ishonch hosil qiling</p>
+                </div>
+            </div>
+    </section>
+
+    <section class="contact">
+        <h1>Biz bilan bog'laning</h1>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Ism (Majburiy)">
+            <input type="tel" id="phone" placeholder="Telefon Raqam (Majburiy)">
+            <button type="submit" id="sendButton">Send</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-github"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+        </div><br>
+        <p>©2024 <a style="text-decoration: none; color: white; " href="https://t.me/Salom12343210">My Profile <i class="bi bi-box-arrow-up-right"></i></a></p>
+    </footer>
+</body>
+<script src="app.js"></script>
+</html>
