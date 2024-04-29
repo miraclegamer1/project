@@ -52,9 +52,9 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     fetch(`https://api.telegram.org/bot${botToken}/sendMessage?chat_id=6959013020&text=Name: ${name}%0APhone: ${phone}`)
         .then(response => {
             if (response.ok) {
-                alert('Form data sent successfully!');
+                alert("Muvaffaqiyatli jo'natildi. Javobimizni kuting!");
             } else {
-                alert('Error sending form data. Please try again.');
+                alert("Iltimos qaytadan urunib ko'ring");
             }
         })
         .catch(error => console.error('Error:', error));
