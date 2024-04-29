@@ -32,10 +32,8 @@ showCard(currentIndex);
 function come (){
  if (list.style.height === "0px") {
     list.style.height = "100px"
-    navbar.style.backgroundColor = "white"
  }else{
     list.style.height = "0px"
-    navbar.style.backgroundColor = "transparent"
  }
 }
 

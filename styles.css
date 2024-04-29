@@ -248,7 +248,7 @@ body {
   right: 10px;
 }
 .list {
-  border: 1px solid black;
+  border: 1px solid #fff;
   padding: 7px;
   border-radius: 6px;
   display: none;
@@ -260,12 +260,13 @@ body {
 
 .list-help{
   width: 100%;
-  background-color: #fff;
+  background-color: #333;
   position: absolute;
   top: 59px;
   height: 0px;
   overflow: hidden;
   transition: all 0.1s;
+  z-index: 11;
 }
 .list-help .a{
   display: flex;
@@ -275,13 +276,155 @@ body {
 .list-help .a a{
   text-decoration: none;
   margin-top: 3px;
-  color: #000;
+  color: #fff;
   letter-spacing: 1px;
 }
 .list-help .i{
   margin-top: 5px;
 }
 .list-help i{
-  color: #000;
+  color: #fff;
   margin-left: 3px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  background-color: #333;
+  color: white;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+  margin-right: 1rem;
+}
+
+.icons {
+  padding-right: 30px;
+}
+
+.icons i {
+  width: 24px;
+  height: 24px;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  color: #0aa0f4;
+}
+
+.header {
+  padding: 2rem;
+  background-image: url('background.jpg');
+  height: 70vh;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+}
+
+.header h1 {
+  font-size: 3rem;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.header p {
+  letter-spacing: 1px;
+}
+
+.shopping-cards {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  transition: transform 0.3s;
+  flex: 0 0 calc(33.333% - 20px);
+  margin-right: 20px;
+}
+
+.card:last-child {
+  margin-right: 0;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.about {
+  padding: 2rem;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.contact {
+  padding: 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.contact input,
+.contact button {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact button {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+}
+
+.social-icons a {
+  margin-right: 1rem;
+  color: #fff;
+}
+
+.header h1{
+  position: relative;
+  z-index: 1;
+}
+.header p{
+  position: relative;
+  z-index: 2;
 }
