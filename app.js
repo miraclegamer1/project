@@ -39,18 +39,18 @@ function come (){
 
 document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault();
-    
-    const name = document.getElementById('name').value;
-    const phone = document.getElementById('phone').value;
-    
- 
+    const nameInput = document.getElementById('name');
+    const phoneInput = document.getElementById('phone');
+    const name = nameInput.value;
+    const phone = phoneInput.value;
     const botToken = '7042099489:AAGBUtACN010HFAV1nXGjliTIhJporeDV_s';
     
-
     fetch(`https://api.telegram.org/bot${botToken}/sendMessage?chat_id=6959013020&text=Name: ${name}%0APhone: ${phone}`)
         .then(response => {
             if (response.ok) {
                 alert("Muvaffaqiyatli jo'natildi. Javobimizni kuting!");
+                nameInput.value = ""; 
+                phoneInput.value = ""; 
             } else {
                 alert("Iltimos qaytadan urunib ko'ring");
             }

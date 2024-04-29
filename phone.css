@@ -11,4 +11,10 @@
     .header h1{
         font-size: 30px;
     }
+    .card {
+        width: 230px;
+    }
+    .card img{
+        width: 200px;
+    }
 }
